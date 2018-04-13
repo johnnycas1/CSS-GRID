@@ -1,3 +1,5 @@
+/* Adjusting html and body for stlye */
+/*------------------------------------------------------*/
 html {
   height: 100%;
   width: 100%;
@@ -16,6 +18,8 @@ body {
   text-align: center;
 }
 
+/*------------------------------------------------------*/
+
 .grid {
   height: 90%;
   width: 90%;
@@ -27,59 +31,108 @@ body {
 }
 
 .nav {
+  /* basic design */
   background-color: #f98080;
   border: 2px solid red;
   border-radius: 5px;
   padding: 5px;
 
+  /* Grid placement*/
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 }
 
-.head {
+.foot {
+  /* basic design */
+  background-color: #dc7bdc;
+  border: 2px solid purple;
+  border-radius: 5px;
+  padding: 5px;
+
+  /* Grid placement*/
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+/* Sidebar layout */
+
+.side {
+  /* basic design */
   background-color: #60a560;
   border: 2px solid green;
   border-radius: 5px;
   padding: 5px;
 
+  /* Grid placement*/
   grid-row: 1 / 2;
   grid-column: 2 / 3;
 }
 
-.foot {
-  background-color: #8e4e8e;
-  border: 2px solid purple;
-  border-radius: 5px;
-  padding: 5px;
+/* Embeded Grid inside of sidebar */
+.side {
+  display: grid;
+  grid-template-rows: 20% 35% 35%;
+  grid-gap: 10px;
+}
 
+#recent1 {
+  /* basic design */
+  background-color: #f98080;
+  border: 2px solid red;
+  border-radius: 5px;
+
+  /* Grid placement*/
   grid-row: 2 / 3;
-  grid-column: 2 / 3;
+}
+
+#recent2 {
+  background-color: #80c1fb;
+  border: 2px solid blue;
+  border-radius: 5px;
+
+  /* Grid placement*/
+  grid-row: 3 / 4;
 }
 
 
+/* Main layout */
+
 .main {
+  /* basic design */
   background-color: #ffcf77;
   border: 2px solid orange;
   border-radius: 5px;
   padding: 5px;
 
+  /* Grid placement*/
   grid-row: 2 / 3;
   grid-column: 1 / 2;
 }
 
 /* Embeded Grid inside of main */
-/*.main {
+.main {
   display: grid;
   grid-template-rows: ;
   grid-template-columns: ;
 }
 
 #article1 {
+  /* basic design */
+  background-color: #80c1fb;
+  border: 2px solid blue;
+  border-radius: 5px;
+
+  /* Grid placement*/
   grid-row: ;
   grid-column: ;
 }
 
 #article2 {
+  background-color: #80dc7b;
+  border: 2px solid green;
+  border-radius: 5px;
+
+  /* Grid placement*/
   grid-row: ;
   grid-column: ;
-}*/
+}
