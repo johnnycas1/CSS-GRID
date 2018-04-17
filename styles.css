@@ -24,7 +24,7 @@ h1, h2, h3, h4 {
 
 /*------------------------------------------------------*/
 
-.grid {
+#grid {
   height: 90%;
   width: 90%;
 
@@ -34,7 +34,7 @@ h1, h2, h3, h4 {
   grid-gap: 10px;
 }
 
-.nav {
+#nav {
   /* basic design */
   background-color: #f98080;
   border: 2px solid red;
@@ -51,7 +51,7 @@ h1, h2, h3, h4 {
   grid-column: 1 / 2;
 }
 
-.foot {
+#foot {
   /* basic design */
   background-color: #dc7bdc;
   border: 2px solid purple;
@@ -70,7 +70,7 @@ h1, h2, h3, h4 {
 
 /* Sidebar layout */
 
-.side {
+#side {
   /* basic design */
   background-color: #60a560;
   border: 2px solid green;
@@ -83,13 +83,13 @@ h1, h2, h3, h4 {
 }
 
 /* Embeded Grid inside of sidebar */
-.side {
+#side {
   display: grid;
   grid-template-rows: 15% 40% 40%;
   grid-gap: 5px;
 }
 
-.side h2 {
+#side h2 {
   align-self: center;
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4 {
 
 /* Main layout */
 
-.main {
+#main {
   /* basic design */
   background-color: #ffcf77;
   border: 2px solid orange;
@@ -128,13 +128,13 @@ h1, h2, h3, h4 {
 }
 
 /* Embeded Grid inside of main */
-/*.main {
+/*#main {
   display: grid;
   grid-template-rows: ;
   grid-template-columns: ;
 }
 
-.main h1 {
+#main h1 {
   align-self: center;
 }*/
 
